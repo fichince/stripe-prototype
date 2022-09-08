@@ -40,7 +40,7 @@
     <div class="flex w-full items-stretch">
       <section class="flex-shrink">
 
-        <div class="border rounded-sm p-5 mb-3">
+        <div class="border rounded-sm p-5 mb-3 h-full">
           <div class="form-control">
             <label class="label cursor-pointer justify-start">
               <input type="radio" name="product" class="radio mr-2" bind:group={product} value="upfront" />
@@ -63,7 +63,7 @@
       </section>
 
       <section class="flex-grow">
-        <div class="border rounded-sm p-5">
+        <div class="border rounded-sm p-5 h-full">
           <div id="payment-element"></div>
         </div>
       </section>
