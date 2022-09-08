@@ -1,2 +1,22 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+  import { goto } from '$app/navigation';
+</script>
+
+<div class="container">
+  Here is the checkout:
+  <form action="/do-checkout" method="post">
+    <button type="submit">
+      Use Stripe Checkout
+    </button>
+  </form>
+
+  <button type="button" on:click={() => goto('/elements')}>
+    Use Stripe Elements
+  </button>
+</div>
+
+<style>
+  .container {
+    padding: 10px;
+  }
+</style>
