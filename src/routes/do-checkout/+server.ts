@@ -8,13 +8,16 @@ const DOMAIN = 'http://localhost:5173';
 
 export const POST : RequestHandler = async (req) => {
 
+  const data = await req.request.formData();
+  const price = (data.get('price') || '') as string;
+
   const session = await client.checkout.sessions.create({
     mode: 'subscription',
-    cancel_url: `${DOMAIN}/cancel`,
+    cancel_url: `${DOMAIN}/`,
     success_url: `${DOMAIN}/success`,
     line_items: [
       {
-        price: 'price_1LZxY0F1SMIIdnkKQEhSywz2',
+        price,
         quantity: 1,
       },
     ]
