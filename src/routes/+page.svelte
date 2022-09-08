@@ -28,6 +28,7 @@
     </form>
   </section>
 
+  <!--
   <section class="card card-body p-16 bg-gray-100 mt-5">
     <h1 class="text-center text-xl mb-5">Stripe Elements</h1>
 
@@ -35,4 +36,5 @@
       Use Stripe Elements
     </button>
   </section>
+  -->
 </main>
