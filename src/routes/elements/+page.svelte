@@ -74,12 +74,12 @@
     </div>
   </form>
 
-  <section class="border rounded-sm p-5 bg-gray-50 w-full mt-10">
+  <section class="border rounded-sm p-5 bg-purple-50 w-full mt-10">
     <h1 class="font-bold text-lg">Testimonials</h1>
 
     <div class="flex">
       {#each testimonials as t}
-      <div class="card card-bordered border rounded-xl bg-gray-300 p-5 m-5">
+      <div class="card card-bordered border rounded-xl bg-pink-100 px-1 py-5 m-5 flex-1">
         <figure>
           <div class="avatar">
             <div class="rounded-full">
